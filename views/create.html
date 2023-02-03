@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <title>Panel</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-group">
+        <div>
+          <input
+            class="form-control"
+            id="username"
+            type="text"
+            placeholder="Write a username."
+          />
+        </div>
+        <div>
+          <input
+            class="form-control"
+            id="mail"
+            type="text"
+            placeholder="Write a e-mail."
+          />
+        </div>
+        <div>
+          <input
+            class="form-control"
+            id="phone"
+            type="text"
+            placeholder="Write a phone."
+          />
+        </div>
+        <div>
+          <input
+            class="form-control"
+            id="active"
+            type="text"
+            placeholder="Is it active ?"
+          />
+        </div>
+        <div>
+          <button class="btn-primary" id="createBtn">CREATE</button>
+        </div>
+      </div>
+    </div>
+    <div id="comtxt">
+      <p>Other Commands:</p>
+    </div>
+    <div class="others">
+      <div>
+        <button class="btn" id="updateBtn">UPDATE</button>
+      </div>
+      <div>
+        <button class="btn" id="deleteBtn">DELETE</button>
+      </div>
+      <div>
+        <button class="btn" id="listallBtn">LIST ALL</button>
+      </div>
+      <div>
+        <button class="btn" id="listoneBtn">LIST ONE</button>
+      </div>
+    </div>
+    <script type="module" src="../javascripts/create.js"></script>
+  </body>
+</html>

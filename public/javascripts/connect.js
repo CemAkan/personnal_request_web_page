@@ -7,7 +7,9 @@ var HOST = process.env.HOST;
 var PASSWORD = process.env.PASSWORD;
 
 const Sequelize = require("sequelize");
-export const sequelize = new Sequelize(DB, NAME, PASSWORD, {
+const sequelize = new Sequelize(DB, NAME, PASSWORD, {
   host: HOST,
   dialect: DIALECT,
 });
+
+module.exports = sequelize;

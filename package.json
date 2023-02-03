@@ -1,4 +1,13 @@
 {
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:2000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
   "name": "resignation-webpage",
   "version": "0.0.0",
   "private": true,
@@ -7,6 +16,7 @@
     "dev": "webpack"
   },
   "dependencies": {
+    "browserify": "^17.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.0.3",
@@ -17,5 +27,19 @@
     "mysql": "^2.18.1",
     "mysql2": "^3.1.0",
     "sequelize": "^6.28.0"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CemAkan/personnal_request_web_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CemAkan/personnal_request_web_page/issues"
+  },
+  "homepage": "https://github.com/CemAkan/personnal_request_web_page#readme",
+  "description": ""
 }
