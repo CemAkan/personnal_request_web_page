@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='../stylesheets/main.css')
+    title PANEL
+  body
+    .input-group
+      div
+        input#ID.form-control(type='text', placeholder='Write a id.')
+      div
+        button#deleteBtn.btn-primary DELETE
+    #comtxt
+      p Other Commands:
+    .others
+      div
+        button#createBtn.btn(onclick="window.location.href = 'http://localhost:2000/add';") CREATE
+      div
+        button#updateBtn.btn UPDATE
+      div
+        button#listoneBtn.btn LIST ONE
+      div
+        button#listallBtn.btn LIST ALL
+    script(type= "module" src='../javascripts/delete.js')
