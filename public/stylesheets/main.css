@@ -1,0 +1,40 @@
+.input-group {
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  margin-top: 20ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-control {
+  border-color: aquamarine;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  background-color: lightgray;
+  color: black;
+}
+.others {
+  width: 340px;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+.btn {
+  width: 90px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 10%;
+  border-color: aquamarine;
+}
+.btn-primary {
+  width: 120px;
+  height: 30px;
+  background-color: gray;
+  border-radius: 10%;
+  border-color: aquamarine;
+}
+#comtxt {
+  text-align: center;
+}
