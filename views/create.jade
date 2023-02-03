@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href="../stylesheets/main.css")
+    title Panel
+  body
+    .container
+      .input-group
+        div
+          input#username.form-control(type='text' placeholder='Write a username.')
+        div
+          input#mail.form-control(type='text' placeholder='Write a e-mail.')
+        div
+          input#phone.form-control(type='text' placeholder='Write a phone.')
+        div
+          input#active.form-control(type='text' placeholder='Is it active ?')
+        div
+          button#createBtn.btn-primary CREATE
+    #comtxt
+      p Other Commands:
+    .others
+      div
+        button#updateBtn.btn UPDATE
+      div
+        button#deleteBtn.btn DELETE
+      div
+        button#listallBtn.btn LIST ALL
+      div
+        button#listoneBtn.btn LIST ONE
+    script(type="module" src='../javascripts/new.js')
+
