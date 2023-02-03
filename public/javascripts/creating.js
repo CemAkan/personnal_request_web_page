@@ -5,6 +5,13 @@ var personCreate = (username, email, phone, active) => {
   sequelize.sync().then(() => {
     console.log("Successfull");
 
+    if (phone.length == 0) {
+      phone = undefined;
+    }
+    if (active.length == 0) {
+      active = undefined;
+    }
+
     User.create({
       username: username,
       email: email,

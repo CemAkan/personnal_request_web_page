@@ -8,6 +8,6 @@ button.addEventListener("click", () => {
   var user = `{username:${Username.value},mail:${Mail.value},phone:${Phone.value},active:${Active.value}}`;
 
   fetch("http://localhost:2000/create/?person=" + user).then(
-    alert("Işlem Başarili")
+    alert("Creating succesful")
   );
 });
