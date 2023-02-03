@@ -1,6 +1,6 @@
-const sequelize = require("./connect.js");
+export { sequelize } from "./connect.js";
 
-const User = sequelize.define("user", {
+export const User = sequelize.define("user", {
   username: {
     type: Sequelize.STRING,
     allowNUll: false,
@@ -28,8 +28,6 @@ const User = sequelize.define("user", {
     defaultValue: true,
   },
 });
-
-module.exports = User;
 
 // var command = argv._[0];
 

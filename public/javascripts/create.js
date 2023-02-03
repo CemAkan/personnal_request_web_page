@@ -3,8 +3,8 @@ const Mail = document.getElementById("mail");
 const Phone = document.getElementById("phone");
 const Active = document.getElementById("active");
 const button = document.getElementById("createBtn");
-var User = require("./server");
-var sequelize = require("./connect.js");
+import { User } from "./server.js";
+import { sequelize } from "./connect.js";
 
 button.addEventListener("click", () => {
   sequelize.sync().then(() => {
