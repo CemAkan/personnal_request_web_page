@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+   h3(style='text-align: center') COMMANDS
+    .othersList.others
+      div
+        button#createBtn.btn(onclick="window.location.href = 'http://localhost:2000/add';") CREATE
+      div
+        button#updateBtn.btn UPDATE
+      div
+        button#deleteBtn.btn(onclick="window.location.href = 'http://localhost:2000/delete';") DELETE
+     div
+        button#listoneBtn.btn(onclick="window.location.href = 'http://localhost:2000/list';") LIST ONE
