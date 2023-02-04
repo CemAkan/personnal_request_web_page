@@ -9,7 +9,8 @@ var listing = (NAME) => {
         username: NAME,
       },
     }).then((row) => {
-      console.log(`
+      try {
+        console.log(`
                   ________________________________________
                   -> ID: ${row.dataValues.id},
                   -> USERNAME: ${row.dataValues.username},
@@ -17,6 +18,9 @@ var listing = (NAME) => {
                   -> PHONE: ${row.dataValues.phone},      
                   -> ACTİVE: ${row.dataValues.active}     
                   ________________________________________`);
+      } catch (error) {
+        console.log("Person can not find !!!");
+      }
     });
   });
 };
