@@ -17,7 +17,9 @@ var personCreate = (username, email, phone, active) => {
       email: email,
       phone: phone,
       active: active,
-    });
+    })
+      .then((success) => console.log("Create successfull."))
+      .catch((err) => console.log("Create not successfull !!!"));
   });
 };
 
