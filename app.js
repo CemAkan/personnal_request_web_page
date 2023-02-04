@@ -11,6 +11,8 @@ var deleteRouter = require("./routes/delete");
 var destroyRouter = require("./routes/destroy.js");
 var listRouter = require("./routes/list");
 var listOneRouter = require("./routes/listone");
+var updateRouter = require("./routes/update");
+var updatingRouter = require("./routes/updating");
 
 var app = express();
 
@@ -31,6 +33,8 @@ app.use("/delete", deleteRouter);
 app.use("/destroy", destroyRouter);
 app.use("/list", listRouter);
 app.use("/listone", listOneRouter);
+app.use("/update", updateRouter);
+app.use("/updating", updatingRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
