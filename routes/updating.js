@@ -14,13 +14,6 @@ router.get("/", function (req, res, next) {
     .replace(/}/g, '"}');
 
   let person = JSON.parse(str);
-  console.log(
-    "------------>" + person.id,
-    person.username,
-    person.email,
-    person.phone,
-    person.active + "<--------------"
-  );
 
   userUpdate(
     person.id,
