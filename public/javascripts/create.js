@@ -7,7 +7,5 @@ const button = document.getElementById("createBtn");
 button.addEventListener("click", () => {
   var user = `{username:${Username.value},mail:${Mail.value},phone:${Phone.value},active:${Active.value}}`;
 
-  fetch("http://localhost:2000/create/?person=" + user).then(
-    alert("Creating succesful")
-  );
+  fetch("http://localhost:2000/create/?person=" + user);
 });
