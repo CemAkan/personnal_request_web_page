@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='../stylesheets/main.css')
+    title PANEL
+  body
+    .input-group
+      div
+        input#nameValue.form-control(type='text', placeholder='Write a NAME.')
+      div
+        button#listBtn.btn-primary LIST
+    h3(style='text-align: center') Others
+    .othersList.others
+      div
+        button#createBtn.btn(onclick="window.location.href = 'http://localhost:2000/add';") CREATE
+      div
+        button#updateBtn.btn UPDATE
+      div
+        button#deleteBtn.btn(onclick="window.location.href = 'http://localhost:2000/delete';") DELETE
+    script(type= "module" src='../javascripts/list.js')
