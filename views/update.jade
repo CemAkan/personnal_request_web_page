@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    div
+      .input-group
+        div
+          input#ID.id_input(type='text', placeholder='Write a ID.')
+        div
+          input#NAME.form-control(type='text', placeholder='Write a username.')
+        div
+          input#EMAIL.form-control(type='text', placeholder='Write a e-mail.')
+        div
+          input#PHONE.form-control(type='text', placeholder='Write a phone.')
+        div
+          input#ACTIVE.form-control(type='text', placeholder='Is it active ?')
+        div
+          button#createBtn.btn-primary UPDATE
+    #comtxt
+      p Other Commands:
+    .others
+      div
+        button#createBtn.btn(onclick="window.location.href = 'http://localhost:2000/add';") CREATE
+      div
+        button#deleteBtn.btn(onclick="window.location.href = 'http://localhost:2000/delete';") DELETE
+      div
+        button#listoneBtn.btn(onclick="window.location.href = 'http://localhost:2000/list';") LIST ONE
+      script(type= "module" src='../javascripts/update.js')
