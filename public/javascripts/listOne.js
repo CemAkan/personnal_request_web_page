@@ -11,6 +11,7 @@ var listing = (NAME) => {
     }).then((row) => {
       console.log(`
                   ________________________________________
+                  -> ID: ${row.dataValues.id},
                   -> USERNAME: ${row.dataValues.username},
                   -> EMAİL: ${row.dataValues.email},      
                   -> PHONE: ${row.dataValues.phone},      
